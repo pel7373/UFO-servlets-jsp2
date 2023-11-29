@@ -7,15 +7,16 @@ import ufo.answers.UFOAnswer;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static ufo.AppContent.*;
+import static ufo.AppContent.LOSE_PAGE;
 
-public class UFO00AcceptChallengeServiceTest {
+class UFO02WhoAreYouServiceTest {
     private static final Logger logger = LoggerFactory.getLogger(
-            UFO00AcceptChallengeServiceTest.class);
-    UFO00AcceptChallengeService uFO00AcceptChallengeService = new UFO00AcceptChallengeService();
+            UFO02WhoAreYouServiceTest.class);
+    UFO02WhoAreYouService uFO02WhoAreYouService = new UFO02WhoAreYouService();
     @Test
     public void callTestTrue() {
-        UFOAnswer answer = uFO00AcceptChallengeService.call(true);
-        UFOAnswer expectedAnswer = new UFOAnswer(STEP_0_ACCEPTED, NEXT_0_PAGE);
+        UFOAnswer answer = uFO02WhoAreYouService.call(true);
+        UFOAnswer expectedAnswer = new UFOAnswer(STEP_2_ACCEPTED, NEXT_2_PAGE);
         assertEquals(expectedAnswer.getMessage(), answer.getMessage());
         assertEquals(expectedAnswer.getPage(), answer.getPage());
         logger.info("callTestTrue was done");
@@ -23,8 +24,8 @@ public class UFO00AcceptChallengeServiceTest {
 
     @Test
     public void callTestFalse() {
-        UFOAnswer answer = uFO00AcceptChallengeService.call(false);
-        UFOAnswer expectedAnswer = new UFOAnswer(STEP_0_NOT_ACCEPTED, LOSE_PAGE);
+        UFOAnswer answer = uFO02WhoAreYouService.call(false);
+        UFOAnswer expectedAnswer = new UFOAnswer(STEP_2_NOT_ACCEPTED, LOSE_PAGE);
         assertEquals(expectedAnswer.getMessage(), answer.getMessage());
         assertEquals(expectedAnswer.getPage(), answer.getPage());
         logger.info("callTestFalse was done");
