@@ -21,10 +21,18 @@ class UFO02WhoAreYouServiceTest {
         assertEquals(expectedAnswer.getPage(), answer.getPage());
         logger.info("callTestTrue was done");
     }
-
     @Test
     public void callTestFalse() {
         UFOAnswer answer = uFO02WhoAreYouService.call(false);
+        UFOAnswer expectedAnswer = new UFOAnswer(STEP_2_NOT_ACCEPTED, LOSE_PAGE);
+        assertEquals(expectedAnswer.getMessage(), answer.getMessage());
+        assertEquals(expectedAnswer.getPage(), answer.getPage());
+        logger.info("callTestFalse was done");
+    }
+    @Test
+    public void callTestAny() {
+        String otherAnswer = "aaa11122";
+        UFOAnswer answer = uFO02WhoAreYouService.call(Boolean.parseBoolean(otherAnswer));
         UFOAnswer expectedAnswer = new UFOAnswer(STEP_2_NOT_ACCEPTED, LOSE_PAGE);
         assertEquals(expectedAnswer.getMessage(), answer.getMessage());
         assertEquals(expectedAnswer.getPage(), answer.getPage());

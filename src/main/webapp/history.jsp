@@ -41,6 +41,6 @@
   <input type="submit" value="Почати гру заново!">
 </form>
 </center>
-
+<jsp:include page="footer.jsp" />
 </body>
 </html>

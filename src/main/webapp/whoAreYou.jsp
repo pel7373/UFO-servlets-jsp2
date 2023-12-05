@@ -21,6 +21,13 @@
                 "whoAreYou.jsp");
         logger.info("whoAreYou.jsp is opened!");
         String message = (String)request.getAttribute("answer");
+
+        session = request.getSession();
+        Integer markerFromStartToFinish = (Integer) session.getAttribute("markerFromStartToFinish");
+        if(markerFromStartToFinish == 1) {
+            markerFromStartToFinish++;
+            session.setAttribute("markerFromStartToFinish", markerFromStartToFinish);
+        }
     %>
     <%= message %>
 
@@ -33,6 +40,6 @@
 
     </form>
 </center>
-
+<jsp:include page="footer.jsp" />
 </body>
 </html>

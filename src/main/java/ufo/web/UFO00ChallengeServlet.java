@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import ufo.UFO00AcceptChallengeService;
 import ufo.answers.UFOAnswer;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,12 +18,12 @@ import java.io.IOException;
 public class UFO00ChallengeServlet extends HttpServlet {
     private static final Logger logger = LoggerFactory.getLogger(
             UFO00ChallengeServlet.class);
-    private final UFO00AcceptChallengeService UFO00AcceptChallengeService = new UFO00AcceptChallengeService();
+    private final UFO00AcceptChallengeService uFO00AcceptChallengeService = new UFO00AcceptChallengeService();
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         StringBuilder sb = new StringBuilder();
-        UFOAnswer answer = UFO00AcceptChallengeService.call(Boolean.parseBoolean(req.getParameter("answer")));
+        UFOAnswer answer = uFO00AcceptChallengeService.call(Boolean.parseBoolean(req.getParameter("answer")));
 
         resp.setStatus(200);
         req.setAttribute("answer", answer.getMessage());

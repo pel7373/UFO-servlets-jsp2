@@ -13,6 +13,12 @@
     StringBuilder sb = new StringBuilder();
     sb.append("index.jsp is opened!");
     logger.info(sb.toString());
+
+    session = request.getSession();
+    Integer markerFromStartToFinish = (Integer) session.getAttribute("markerFromStartToFinish");
+    markerFromStartToFinish = 0;
+    session.setAttribute("markerFromStartToFinish", markerFromStartToFinish);
+
 %>
 
 <jsp:include page="header.jsp" />
@@ -27,6 +33,6 @@
 
 </form>
 </center>
-
+<jsp:include page="footer.jsp" />
 </body>
 </html>

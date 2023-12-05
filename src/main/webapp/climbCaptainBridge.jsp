@@ -22,6 +22,13 @@
         logger.info("climbCaptainBridge.jsp is opened!");
 
         String message = (String)request.getAttribute("answer");
+
+        session = request.getSession();
+        Integer markerFromStartToFinish = (Integer) session.getAttribute("markerFromStartToFinish");
+        if(markerFromStartToFinish == 0) {
+            markerFromStartToFinish++;
+            session.setAttribute("markerFromStartToFinish", markerFromStartToFinish);
+        }
     %>
     <%= message %>
 
@@ -34,5 +41,6 @@
 
     </form>
 </center>
+<jsp:include page="footer.jsp" />
 </body>
 </html>

@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import static ufo.AppContent.*;
 
-class UFO00ChallengeServletTest extends Mockito {
+class UFO02WhoAreYouServletTest extends Mockito {
     HttpServletRequest request = spy(HttpServletRequest.class);
     HttpServletResponse response = spy(HttpServletResponse.class);
     RequestDispatcher requestDispatcher = spy(RequestDispatcher.class);
@@ -19,14 +19,14 @@ class UFO00ChallengeServletTest extends Mockito {
     @Test
     public void doPostAnswerTrueTest() throws ServletException, IOException {
         String expectedAnswer = "true";
-        String expectedNextPage = NEXT_0_PAGE;
-        String expectedAnswerInResponse = STEP_0_ACCEPTED;
+        String expectedNextPage = NEXT_2_PAGE;
+        String expectedAnswerInResponse = STEP_2_ACCEPTED;
 
         when(request.getParameter("answer")).thenReturn(expectedAnswer);
         when(request.getServletContext()).thenReturn(context);
         when(request.getRequestDispatcher(expectedNextPage)).thenReturn(requestDispatcher);
 
-        new UFO00ChallengeServlet().doPost(request, response);
+        new UFO02WhoAreYouServlet().doPost(request, response);
         verify(requestDispatcher).forward(request, response);
         verify(request, times(1)).getParameter("answer");
         verify(request, times(1)).setAttribute("answer", expectedAnswerInResponse);
@@ -37,13 +37,13 @@ class UFO00ChallengeServletTest extends Mockito {
     public void doPostAnswerFalseTest() throws ServletException, IOException {
         String expectedAnswer = "false";
         String expectedNextPage = LOSE_PAGE;
-        String expectedAnswerInResponse = STEP_0_NOT_ACCEPTED;
+        String expectedAnswerInResponse = STEP_2_NOT_ACCEPTED;
 
         when(request.getParameter("answer")).thenReturn(expectedAnswer);
         when(request.getServletContext()).thenReturn(context);
         when(request.getRequestDispatcher(expectedNextPage)).thenReturn(requestDispatcher);
 
-        new UFO00ChallengeServlet().doPost(request, response);
+        new UFO02WhoAreYouServlet().doPost(request, response);
         verify(requestDispatcher).forward(request, response);
         verify(request, times(1)).getParameter("answer");
         verify(request, times(1)).setAttribute("answer", expectedAnswerInResponse);
@@ -54,16 +54,17 @@ class UFO00ChallengeServletTest extends Mockito {
     public void doPostAnswerAnyTest() throws ServletException, IOException {
         String expectedAnswer = "aaa111";
         String expectedNextPage = LOSE_PAGE;
-        String expectedAnswerInResponse = STEP_0_NOT_ACCEPTED;
+        String expectedAnswerInResponse = STEP_2_NOT_ACCEPTED;
 
         when(request.getParameter("answer")).thenReturn(expectedAnswer);
         when(request.getServletContext()).thenReturn(context);
         when(request.getRequestDispatcher(expectedNextPage)).thenReturn(requestDispatcher);
 
-        new UFO00ChallengeServlet().doPost(request, response);
+        new UFO02WhoAreYouServlet().doPost(request, response);
         verify(requestDispatcher).forward(request, response);
         verify(request, times(1)).getParameter("answer");
         verify(request, times(1)).setAttribute("answer", expectedAnswerInResponse);
         verify(response, times(1)).setStatus(200);
     }
+
 }

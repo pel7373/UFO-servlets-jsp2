@@ -21,10 +21,18 @@ class UFO01CaptainBridgeServiceTest {
         assertEquals(expectedAnswer.getPage(), answer.getPage());
         logger.info("callTestTrue was done");
     }
-
     @Test
     public void callTestFalse() {
         UFOAnswer answer = uFO01CaptainBridgeService.call(false);
+        UFOAnswer expectedAnswer = new UFOAnswer(STEP_1_NOT_ACCEPTED, LOSE_PAGE);
+        assertEquals(expectedAnswer.getMessage(), answer.getMessage());
+        assertEquals(expectedAnswer.getPage(), answer.getPage());
+        logger.info("callTestFalse was done");
+    }
+    @Test
+    public void callTestAny() {
+        String otherAnswer = "aaa11122";
+        UFOAnswer answer = uFO01CaptainBridgeService.call(Boolean.parseBoolean(otherAnswer));
         UFOAnswer expectedAnswer = new UFOAnswer(STEP_1_NOT_ACCEPTED, LOSE_PAGE);
         assertEquals(expectedAnswer.getMessage(), answer.getMessage());
         assertEquals(expectedAnswer.getPage(), answer.getPage());

@@ -17,10 +17,27 @@
 
 <center>
 <%
-        Logger logger = LoggerFactory.getLogger(
-                "youWon.jsp");
-        logger.info("youWon.jsp is opened!");
-        String message = (String)request.getAttribute("answer");
+    Logger logger = LoggerFactory.getLogger(
+            "youWon.jsp");
+    logger.info("youWon.jsp is opened!");
+    String message = (String)request.getAttribute("answer");
+
+    session = request.getSession();
+    Integer markerFromStartToFinish = (Integer) session.getAttribute("markerFromStartToFinish");
+    if(markerFromStartToFinish == 2) {
+        Integer won = (Integer) session.getAttribute("won");
+        if(won != null) {
+            Integer total = (Integer) session.getAttribute("total");
+            won++;
+            total++;
+            session.setAttribute("won", won);
+            session.setAttribute("total", total);
+            session.setAttribute("markerFromStartToFinish", -5);
+        } else {
+            won = 1;
+        }
+    }
+
 %>
         <%= message %>
 
@@ -29,5 +46,6 @@
     <input type="submit" value="Почати гру заново!">
 </form>
 </center>
+<jsp:include page="footer.jsp" />
 </body>
 </html>
