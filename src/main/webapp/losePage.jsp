@@ -17,6 +17,18 @@
     logger.info(sb.toString());
 
     String message = (String)request.getAttribute("answer");
+
+    session = request.getSession();
+    Integer markerFromStartToFinish = (Integer) session.getAttribute("markerFromStartToFinish");
+    if(markerFromStartToFinish != null
+        && (markerFromStartToFinish == 0
+            || markerFromStartToFinish == 1
+            || markerFromStartToFinish == 2)) {
+        Integer total = (Integer) session.getAttribute("total");
+        total++;
+        session.setAttribute("total", total);
+        session.setAttribute("markerFromStartToFinish", -5);
+    }
 %>
 <%= message %>
 <h1>Ви програли!</h1>
