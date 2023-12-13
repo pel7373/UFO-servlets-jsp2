@@ -4,14 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cac03cb2-95d4-4066-9a8b-dff1c202d60c" name="Changes" comment="" />
+    <list default="true" id="cac03cb2-95d4-4066-9a8b-dff1c202d60c" name="Changes" comment="Counting of total number of games in losePage.jsp has been fixed">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slf4jlogbackexample-test.log" beforeDir="false" afterPath="$PROJECT_DIR$/slf4jlogbackexample-test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slf4jlogbackexample.log" beforeDir="false" afterPath="$PROJECT_DIR$/slf4jlogbackexample.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ufo/UFO00AcceptChallengeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ufo/UFO00AcceptChallengeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/climbCaptainBridge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/climbCaptainBridge.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/history.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/history.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/losePage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/losePage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/whoAreYou.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/whoAreYou.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/youWon.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/youWon.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Developer" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.idea/encodings.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.idea/jarRepositories.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.idea/misc.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.idea/workspace.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/slf4jlogbackexample-test.log" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/ufo/UFO00AcceptChallengeServiceTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/ufo/UFO01CaptainBridgeServiceTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/ufo/UFO02WhoAreYouServiceTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/ufo/web/UFO00ChallengeServletTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/resources/logback-test.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2YaCR3RJQXzyCiZRzwPjvYY3acb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -25,9 +76,134 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "E:/_JavaRush-University/Test5",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "configurable.group.language"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\_JavaRush-University\UFO-servlets-jsp2\src\test" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ufo.web" />
+      <recent name="ufo" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn tomcat7:run" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.UFO00AcceptChallengeServiceTest">
+    <configuration name="UFO00AcceptChallengeServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UFO-servlets-jsp2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ufo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ufo" />
+      <option name="MAIN_CLASS_NAME" value="ufo.UFO00AcceptChallengeServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UFO00AcceptChallengeServiceTest.callTestAny" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UFO-servlets-jsp2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ufo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ufo" />
+      <option name="MAIN_CLASS_NAME" value="ufo.UFO00AcceptChallengeServiceTest" />
+      <option name="METHOD_NAME" value="callTestAny" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UFO01CaptainBridgeServletTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UFO-servlets-jsp2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ufo.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ufo.web" />
+      <option name="MAIN_CLASS_NAME" value="ufo.web.UFO01CaptainBridgeServletTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UFO02WhoAreYouServletTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UFO-servlets-jsp2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ufo.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ufo.web" />
+      <option name="MAIN_CLASS_NAME" value="ufo.web.UFO02WhoAreYouServletTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UFO02WhoAreYouServletTest.doPostAnswerTrueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UFO-servlets-jsp2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ufo.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ufo.web" />
+      <option name="MAIN_CLASS_NAME" value="ufo.web.UFO02WhoAreYouServletTest" />
+      <option name="METHOD_NAME" value="doPostAnswerTrueTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UFO00AcceptChallengeServiceTest" />
+        <item itemvalue="JUnit.UFO00AcceptChallengeServiceTest.callTestAny" />
+        <item itemvalue="JUnit.UFO01CaptainBridgeServletTest" />
+        <item itemvalue="JUnit.UFO02WhoAreYouServletTest" />
+        <item itemvalue="JUnit.UFO02WhoAreYouServletTest.doPostAnswerTrueTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -36,7 +212,68 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700754299697</updated>
+      <workItem from="1701134276777" duration="8174000" />
+      <workItem from="1701142744905" duration="2074000" />
+      <workItem from="1701164964100" duration="705000" />
+      <workItem from="1701227772569" duration="4718000" />
+      <workItem from="1701247135320" duration="1514000" />
+      <workItem from="1701309800891" duration="675000" />
+      <workItem from="1701569822823" duration="3746000" />
+      <workItem from="1701574007178" duration="1747000" />
+      <workItem from="1701730772238" duration="5601000" />
+      <workItem from="1701736523423" duration="4890000" />
+      <workItem from="1702425979201" duration="2235000" />
     </task>
+    <task id="LOCAL-00001" summary="Log was introduced and junit testing has begun to be implemented">
+      <created>1701165653070</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701165653070</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Junit testing for services classes was done">
+      <created>1701249309369</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701249309369</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Logic, logging, tests and sessions were done">
+      <created>1701740021107</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701740021107</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Counting of total number of games in losePage.jsp has been fixed">
+      <created>1701740869695</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701740869695</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Log was introduced and junit testing has begun to be implemented" />
+    <MESSAGE value="Junit testing for services classes was done" />
+    <MESSAGE value="Logic, logging, tests and sessions were done" />
+    <MESSAGE value="Counting of total number of games in losePage.jsp has been fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Counting of total number of games in losePage.jsp has been fixed" />
   </component>
 </project>
