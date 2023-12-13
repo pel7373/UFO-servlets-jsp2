@@ -236,3 +236,39 @@
 05.12.2023 02:37:33.541 [main] INFO   u.w.UFO02WhoAreYouServlet - Answer was received. Message: Ви збрехали про себе. Ваша брехня була викрита!; forwarding to page: losePage.jsp; status was set: 200.
 05.12.2023 02:37:33.547 [main] INFO   u.UFO02WhoAreYouService - Answer was received. isAccepted: true; message: Ви розповіли правду про себе; next page: youWon.jsp
 05.12.2023 02:37:33.547 [main] INFO   u.w.UFO02WhoAreYouServlet - Answer was received. Message: Ви розповіли правду про себе; forwarding to page: youWon.jsp; status was set: 200.
+05.12.2023 03:39:27.447 [main] INFO   u.UFO00AcceptChallengeService - Answer was received. isAccepted: false; message: Ви відхилили виклик; next page: losePage.jsp
+05.12.2023 03:39:27.464 [main] INFO   u.UFO00AcceptChallengeServiceTest - callTestAny was done
+05.12.2023 03:39:27.488 [main] INFO   u.UFO00AcceptChallengeService - Answer was received. isAccepted: true; message: Ви прийняли виклик; next page: climbCaptainBridge.jsp
+05.12.2023 03:39:27.488 [main] INFO   u.UFO00AcceptChallengeServiceTest - callTestTrue was done
+05.12.2023 03:39:27.491 [main] INFO   u.UFO00AcceptChallengeService - Answer was received. isAccepted: false; message: Ви відхилили виклик; next page: losePage.jsp
+05.12.2023 03:39:27.492 [main] INFO   u.UFO00AcceptChallengeServiceTest - callTestFalse was done
+05.12.2023 03:39:27.502 [main] INFO   u.UFO01CaptainBridgeService - Answer was received. isAccepted: false; message: Ви відмовилися підніматися на капітанський місток. Ви не пішли на переговори!; next page: losePage.jsp
+05.12.2023 03:39:27.502 [main] INFO   u.UFO01CaptainBridgeServiceTest - callTestFalse was done
+05.12.2023 03:39:27.504 [main] INFO   u.UFO01CaptainBridgeService - Answer was received. isAccepted: true; message: Ви піднялися на капітанський місток; next page: whoAreYou.jsp
+05.12.2023 03:39:27.504 [main] INFO   u.UFO01CaptainBridgeServiceTest - callTestTrue was done
+05.12.2023 03:39:27.506 [main] INFO   u.UFO01CaptainBridgeService - Answer was received. isAccepted: false; message: Ви відмовилися підніматися на капітанський місток. Ви не пішли на переговори!; next page: losePage.jsp
+05.12.2023 03:39:27.506 [main] INFO   u.UFO01CaptainBridgeServiceTest - callTestFalse was done
+05.12.2023 03:39:27.514 [main] INFO   u.UFO02WhoAreYouService - Answer was received. isAccepted: false; message: Ви збрехали про себе. Ваша брехня була викрита!; next page: losePage.jsp
+05.12.2023 03:39:27.514 [main] INFO   u.UFO02WhoAreYouServiceTest - callTestFalse was done
+05.12.2023 03:39:27.517 [main] INFO   u.UFO02WhoAreYouService - Answer was received. isAccepted: true; message: Ви розповіли правду про себе; next page: youWon.jsp
+05.12.2023 03:39:27.517 [main] INFO   u.UFO02WhoAreYouServiceTest - callTestTrue was done
+05.12.2023 03:39:27.519 [main] INFO   u.UFO02WhoAreYouService - Answer was received. isAccepted: false; message: Ви збрехали про себе. Ваша брехня була викрита!; next page: losePage.jsp
+05.12.2023 03:39:27.519 [main] INFO   u.UFO02WhoAreYouServiceTest - callTestFalse was done
+05.12.2023 03:39:28.809 [main] INFO   u.UFO00AcceptChallengeService - Answer was received. isAccepted: false; message: Ви відхилили виклик; next page: losePage.jsp
+05.12.2023 03:39:28.810 [main] INFO   u.w.UFO00ChallengeServlet - Answer was received. Message: Ви відхилили виклик; forwarding to page: losePage.jsp; status was set: 200.
+05.12.2023 03:39:28.824 [main] INFO   u.UFO00AcceptChallengeService - Answer was received. isAccepted: false; message: Ви відхилили виклик; next page: losePage.jsp
+05.12.2023 03:39:28.825 [main] INFO   u.w.UFO00ChallengeServlet - Answer was received. Message: Ви відхилили виклик; forwarding to page: losePage.jsp; status was set: 200.
+05.12.2023 03:39:28.831 [main] INFO   u.UFO00AcceptChallengeService - Answer was received. isAccepted: true; message: Ви прийняли виклик; next page: climbCaptainBridge.jsp
+05.12.2023 03:39:28.832 [main] INFO   u.w.UFO00ChallengeServlet - Answer was received. Message: Ви прийняли виклик; forwarding to page: climbCaptainBridge.jsp; status was set: 200.
+05.12.2023 03:39:28.893 [main] INFO   u.UFO01CaptainBridgeService - Answer was received. isAccepted: false; message: Ви відмовилися підніматися на капітанський місток. Ви не пішли на переговори!; next page: losePage.jsp
+05.12.2023 03:39:28.895 [main] INFO   u.w.UFO01CaptainBridgeServlet - Answer was received. Message: Ви відмовилися підніматися на капітанський місток. Ви не пішли на переговори!; forwarding to page: losePage.jsp; status was set: 200.
+05.12.2023 03:39:28.905 [main] INFO   u.UFO01CaptainBridgeService - Answer was received. isAccepted: false; message: Ви відмовилися підніматися на капітанський місток. Ви не пішли на переговори!; next page: losePage.jsp
+05.12.2023 03:39:28.906 [main] INFO   u.w.UFO01CaptainBridgeServlet - Answer was received. Message: Ви відмовилися підніматися на капітанський місток. Ви не пішли на переговори!; forwarding to page: losePage.jsp; status was set: 200.
+05.12.2023 03:39:28.913 [main] INFO   u.UFO01CaptainBridgeService - Answer was received. isAccepted: true; message: Ви піднялися на капітанський місток; next page: whoAreYou.jsp
+05.12.2023 03:39:28.913 [main] INFO   u.w.UFO01CaptainBridgeServlet - Answer was received. Message: Ви піднялися на капітанський місток; forwarding to page: whoAreYou.jsp; status was set: 200.
+05.12.2023 03:39:29.006 [main] INFO   u.UFO02WhoAreYouService - Answer was received. isAccepted: false; message: Ви збрехали про себе. Ваша брехня була викрита!; next page: losePage.jsp
+05.12.2023 03:39:29.007 [main] INFO   u.w.UFO02WhoAreYouServlet - Answer was received. Message: Ви збрехали про себе. Ваша брехня була викрита!; forwarding to page: losePage.jsp; status was set: 200.
+05.12.2023 03:39:29.015 [main] INFO   u.UFO02WhoAreYouService - Answer was received. isAccepted: false; message: Ви збрехали про себе. Ваша брехня була викрита!; next page: losePage.jsp
+05.12.2023 03:39:29.019 [main] INFO   u.w.UFO02WhoAreYouServlet - Answer was received. Message: Ви збрехали про себе. Ваша брехня була викрита!; forwarding to page: losePage.jsp; status was set: 200.
+05.12.2023 03:39:29.026 [main] INFO   u.UFO02WhoAreYouService - Answer was received. isAccepted: true; message: Ви розповіли правду про себе; next page: youWon.jsp
+05.12.2023 03:39:29.028 [main] INFO   u.w.UFO02WhoAreYouServlet - Answer was received. Message: Ви розповіли правду про себе; forwarding to page: youWon.jsp; status was set: 200.

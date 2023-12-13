@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <center>
     <hr>
     <%
@@ -15,6 +16,6 @@
         }
 
     %>
-    Total number of games in this session: <b><%= total%></b>; number of games won in this session: <b><%= won %></b>
+    Загальна кількість зіграних ігор у цій сесії: <b><%= total%></b>; кількість виграних ігор у цій сесії: <b><%= won %></b>
 
 </center>

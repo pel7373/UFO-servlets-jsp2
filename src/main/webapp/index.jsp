@@ -1,5 +1,6 @@
 <%@ page import="org.slf4j.Logger" %>
 <%@ page import="org.slf4j.LoggerFactory" %>
+<%@ page import="static ufo.AppContent.*" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -15,8 +16,7 @@
     logger.info(sb.toString());
 
     session = request.getSession();
-    Integer markerFromStartToFinish = (Integer) session.getAttribute("markerFromStartToFinish");
-    markerFromStartToFinish = 0;
+    String markerFromStartToFinish = STEP_0_ACCEPTED;
     session.setAttribute("markerFromStartToFinish", markerFromStartToFinish);
 
 %>

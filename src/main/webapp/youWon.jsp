@@ -7,6 +7,7 @@
 --%>
 <%@ page import="org.slf4j.Logger" %>
 <%@ page import="org.slf4j.LoggerFactory" %>
+<%@ page import="static ufo.AppContent.*" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -23,21 +24,20 @@
     String message = (String)request.getAttribute("answer");
 
     session = request.getSession();
-    Integer markerFromStartToFinish = (Integer) session.getAttribute("markerFromStartToFinish");
-    if(markerFromStartToFinish == 2) {
+    String markerFromStartToFinish = (String) session.getAttribute("markerFromStartToFinish");
+    if(markerFromStartToFinish.equals(STEP_2_ACCEPTED)) {
         Integer won = (Integer) session.getAttribute("won");
+        Integer total = (Integer) session.getAttribute("total");
+        total++;
         if(won != null) {
-            Integer total = (Integer) session.getAttribute("total");
             won++;
-            total++;
-            session.setAttribute("won", won);
-            session.setAttribute("total", total);
-            session.setAttribute("markerFromStartToFinish", -5);
         } else {
             won = 1;
         }
+        session.setAttribute("won", won);
+        session.setAttribute("total", total);
+        session.setAttribute("markerFromStartToFinish", LOSE_PAGE);
     }
-
 %>
         <%= message %>
 

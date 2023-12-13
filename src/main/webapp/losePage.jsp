@@ -1,5 +1,6 @@
 <%@ page import="org.slf4j.Logger" %>
 <%@ page import="org.slf4j.LoggerFactory" %>
+<%@ page import="static ufo.AppContent.*" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -19,15 +20,15 @@
     String message = (String)request.getAttribute("answer");
 
     session = request.getSession();
-    Integer markerFromStartToFinish = (Integer) session.getAttribute("markerFromStartToFinish");
+    String markerFromStartToFinish = (String) session.getAttribute("markerFromStartToFinish");
     if(markerFromStartToFinish != null
-        && (markerFromStartToFinish == 0
-            || markerFromStartToFinish == 1
-            || markerFromStartToFinish == 2)) {
+        && (markerFromStartToFinish.equals(STEP_0_ACCEPTED)
+            || markerFromStartToFinish.equals(STEP_1_ACCEPTED)
+            || markerFromStartToFinish.equals(STEP_2_ACCEPTED))) {
         Integer total = (Integer) session.getAttribute("total");
         total++;
         session.setAttribute("total", total);
-        session.setAttribute("markerFromStartToFinish", -5);
+        session.setAttribute("markerFromStartToFinish", LOSE_PAGE);
     }
 %>
 <%= message %>

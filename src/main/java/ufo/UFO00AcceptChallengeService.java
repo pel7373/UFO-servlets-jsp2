@@ -3,7 +3,6 @@ package ufo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ufo.answers.UFOAnswer;
-import ufo.web.UFO00ChallengeServlet;
 
 import static ufo.AppContent.*;
 
